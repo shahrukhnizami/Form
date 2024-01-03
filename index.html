@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Saylani Welfare</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .center {
+          margin: auto;
+          width: 35%;
+          padding: 10px;
+        }
+        
+        .lable{
+          color: #0d6db7;
+          font-weight: bold;
+
+        }
+        .txtbx{
+          width:-webkit-fill-available;
+        }
+      </style>
+</head>
+<body>
+  
+    <div class="center">
+        <img  width="100%"    src="https://forms.saylaniwelfare.com/static/media/logo.22bf709605809177256c.png">
+    <div>
+        <h2 style="text-align: center;">Registration Form - SMIT</h2>
+        <strong><p style="text-align: center; color: #666;">Services - Education - Registration</p></strong>
+        <strong><p style="text-align: center;   color: #8dc63f;">
+            <a style="text-decoration: none; color: #8dc63f;" href="#">New Application</a> | 
+            <a style="text-decoration: none; color: #8dc63f;" href="#">Download ID Card</a> | 
+            <a style="text-decoration: none; color: #8dc63f;" href="#">Results</a></p></strong>
+    </div>
+  </div>
+  <form>
+    <table  style="margin: auto;">
+      <tr>
+        <td><label class="lable">Select City </label>
+        <br><br>
+          <select class="txtbx">
+          <option value="Karachi">Karachi</option>
+          <option value="Islamabad">Islamabad</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Multan">Multan</option>
+          </select>
+        </td>
+        <td><label class="lable">Select course or event </label>
+          <br><br>
+          <select class="txtbx" >        
+          <option value="Web_&_Development">Web & Development</option>
+          <option value="Artificial_Intelligence">Artificial Intelligence</option>
+          <option value="Data_Base">Data Base</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><br><label class="lable">Full Name</label>
+          <br><br>
+          <input class="txtbx" required type="text" placeholder="Enter Your Name">
+        </td>
+        <td><br>
+          <strong><label class="lable">Father Name</label></strong>
+          <br><br>
+            <input class="txtbx" required type="text" placeholder="Enter Your Father Name">
+        </td>
+      </tr>
+      <tr>
+        <td><br>
+          <label class="lable">Email</label>
+          <br><br>
+            <input class="txtbx" required type="email" placeholder="Email Address">
+        </td>
+        <td><br>
+          <label class="lable">Phone</label>
+          <br><br>
+            <input  class="txtbx"required type="tel" placeholder="03001234567" pattern="[0-9]{11}" required>
+            
+        </td>
+      </tr>
+      <tr>
+        <td><br>
+          <label class="lable">NIC</label>
+          <br><br>
+            <input class="txtbx" type="text"  name="phone" placeholder="42301-6943872-1" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" required>
+            <small>NIC include with "-"</small>
+          </td>
+        <td><br>
+          <label class="lable">Father's CNIC (optional)</label>
+          
+          <br><br>
+            <input class="txtbx" type="text"  name="phone" placeholder="42301-6943872-1" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" >
+            <small>NIC include with "-"</small>
+          </td>
+      </tr>
+      <tr>
+        <td><br>
+          <label class="lable">Date Of Birth</label>
+          <br><br>
+            <input class="txtbx" type="date" required>
+        </td>
+        <td><br>
+          <label class="lable">Select gender</label><br><br>
+            <input  type="radio" name="gender" value="male" > Male
+            <input  type="radio" name="gender" value="female"> Female
+            <input  type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><br>
+          <label class="lable">Address</label>
+          <br><br>
+          <input class="txtbx" required type="text" placeholder="Enter Your Address">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><br>
+          <label class="lable">Last qualification </label>
+          <br><br>
+            <select class="txtbx" >        
+            <option value="Matric">Matric</option>
+            <option value="Inter">Inter</option>
+            <option value="Graduation">Graduation</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><br>
+          <label class="lable">Do you have a Laptop? </label>
+          <br><br>
+            <select class="txtbx" >        
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><br>
+          <label class="lable" for="img">Picture</label>
+          <br><br>
+            <input class="txtbx" type="file" id="img" name="img" accept="image/*">
+         </td>
+      </tr>
+      <tr>
+        <td colspan="2"><br>
+          <input type="submit"></td>
+      </tr>
+    </table>
+  
+
+
+    
+  </form>
+</body>
+</html>
